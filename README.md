@@ -23,7 +23,7 @@ This driver extends Metabase's `sql-jdbc` driver directly, bypassing the problem
 
 ### Option 1: Download Pre-built JAR
 
-Download the latest `starrocks.metabase-driver.jar` from the [Releases](../../releases) page.
+Download the latest `starrocks.metabase-driver-vX.X.X.jar` from the [Releases](../../releases) page.
 
 ### Option 2: Build from Source
 
@@ -116,6 +116,19 @@ Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for gui
 2. Install [Clojure CLI tools](https://clojure.org/guides/install_clojure)
 3. Make your changes in `src/metabase/driver/starrocks.clj`
 4. Build and test: `clojure -T:build uber`
+
+## Releases
+
+This project uses [semantic versioning](https://semver.org/). Releases are automated via GitHub Actions.
+
+To create a new release:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+This triggers a workflow that builds the JAR and creates a GitHub release with the artifact attached (e.g., `starrocks.metabase-driver-v1.0.0.jar`).
 
 ## Troubleshooting
 
